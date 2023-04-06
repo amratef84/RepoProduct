@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZmJhI1qSflwtSFSGf6J0EyaprdhH68CtymoqlAZEDmEKQDOCIGicMjWXt6BpptV2Gn8iiR78xyhD2zhiHQRyJQ==",
+  "dgSpecHash": "caxH1hTC5vFrAgO23dVHvuqyn7Lk2BLGgijIffBqpE7BTcByXKJNwAa0RBowBRO/BJMtnV0T0Bu37CBVENT3tg==",
   "success": true,
-  "projectFilePath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Domin\\Products.Domain.csproj",
+  "projectFilePath": "C:\\Users\\USER\\source\\repos\\netCoreTest\\Products.Domin\\Products.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -101,10 +101,10 @@
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
         }
       },
-      "GraphQL/5.4.0": {
+      "GraphQL/4.8.0": {
         "type": "package",
         "dependencies": {
-          "GraphQL-Parser": "8.0.0",
+          "GraphQL-Parser": "[7.2.0, 8.0.0)",
           "Microsoft.CSharp": "4.7.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },
@@ -115,13 +115,13 @@
           "lib/net6.0/GraphQL.dll": {}
         }
       },
-      "GraphQL-Parser/8.0.0": {
+      "GraphQL-Parser/7.2.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/GraphQLParser.dll": {}
+          "lib/netstandard2.1/GraphQL-Parser.dll": {}
         },
         "runtime": {
-          "lib/net6.0/GraphQLParser.dll": {}
+          "lib/netstandard2.1/GraphQL-Parser.dll": {}
         }
       },
       "GraphQL.DataLoader/4.6.1": {
@@ -136,10 +136,10 @@
           "lib/netstandard2.0/GraphQL.DataLoader.dll": {}
         }
       },
-      "GraphQL.NewtonsoftJson/4.6.1": {
+      "GraphQL.NewtonsoftJson/4.8.0": {
         "type": "package",
         "dependencies": {
-          "GraphQL": "4.6.1",
+          "GraphQL": "4.8.0",
           "Newtonsoft.Json": "12.0.3",
           "System.Buffers": "4.5.1"
         },
@@ -213,13 +213,13 @@
           "lib/netstandard2.0/GraphQL.Server.Transports.Subscriptions.Abstractions.dll": {}
         }
       },
-      "GraphQL.Server.Ui.Playground/7.3.0": {
+      "GraphQL.Server.Ui.Playground/5.2.2": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.1/GraphQL.Server.Ui.Playground.dll": {}
+          "lib/net6.0/GraphQL.Server.Ui.Playground.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.1/GraphQL.Server.Ui.Playground.dll": {}
+          "lib/net6.0/GraphQL.Server.Ui.Playground.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -2131,15 +2131,14 @@
         "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
-    "GraphQL/5.4.0": {
-      "sha512": "ZRH9miLrVDpcPGxilMnKpisJVS/HvnH2IbFP+X24dQx6JD8rv7xpW4DGmdGoKGSWbKvFh1ov+vwwa7dDW6iIbw==",
+    "GraphQL/4.8.0": {
+      "sha512": "kbF9KjvB4n1Ym/p7L4/+hhCHGhevBmAinjz0iZw1ThZ5WSUWmycYUneC0NBSDYpLcA6dToXL0cnDJjW6BxT13Q==",
       "type": "package",
-      "path": "graphql/5.4.0",
+      "path": "graphql/4.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "README.md",
-        "graphql.5.4.0.nupkg.sha512",
+        "graphql.4.8.0.nupkg.sha512",
         "graphql.nuspec",
         "lib/net6.0/GraphQL.dll",
         "lib/net6.0/GraphQL.xml",
@@ -2150,22 +2149,19 @@
         "logo.64x64.png"
       ]
     },
-    "GraphQL-Parser/8.0.0": {
-      "sha512": "kbAEvS0u240X3eN+5zv2eEVKlYTUhW3OB3JmGvI0ZTfiikyQYbWpt3t25C3aykolZUo2WCxewveeCNP4BHXR9A==",
+    "GraphQL-Parser/7.2.0": {
+      "sha512": "38qDxnwdUHK5zkWL28UhkmytkSSwDvX+dBhOVN1USgpZg7E2PUVNixbyG8JKEuRw/vqnhBWhk4JwkqA6jvHaFA==",
       "type": "package",
-      "path": "graphql-parser/8.0.0",
+      "path": "graphql-parser/7.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "README.md",
-        "graphql-parser.8.0.0.nupkg.sha512",
+        "graphql-parser.7.2.0.nupkg.sha512",
         "graphql-parser.nuspec",
-        "lib/net6.0/GraphQLParser.dll",
-        "lib/net6.0/GraphQLParser.xml",
-        "lib/netstandard2.0/GraphQLParser.dll",
-        "lib/netstandard2.0/GraphQLParser.xml",
-        "lib/netstandard2.1/GraphQLParser.dll",
-        "lib/netstandard2.1/GraphQLParser.xml",
+        "lib/netstandard2.0/GraphQL-Parser.dll",
+        "lib/netstandard2.0/GraphQL-Parser.xml",
+        "lib/netstandard2.1/GraphQL-Parser.dll",
+        "lib/netstandard2.1/GraphQL-Parser.xml",
         "logo.64x64.png"
       ]
     },
@@ -2183,14 +2179,14 @@
         "logo.64x64.png"
       ]
     },
-    "GraphQL.NewtonsoftJson/4.6.1": {
-      "sha512": "lVc37iwg1YfPlKfoewT/S3+8KJqRVy3JrrA5sWy5V0cS12B9Bg8NvTOyb2chzCFoxl5p1nvuSETlI0cRcIsQqQ==",
+    "GraphQL.NewtonsoftJson/4.8.0": {
+      "sha512": "nrjxGp2QErRl+JOV1x91kZPe+ucs3NuVw95PXvnrChTUt4NAmd0glzTD++mBSu+6PdNTO3SyybLcmb5e2hak0w==",
       "type": "package",
-      "path": "graphql.newtonsoftjson/4.6.1",
+      "path": "graphql.newtonsoftjson/4.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "graphql.newtonsoftjson.4.6.1.nupkg.sha512",
+        "graphql.newtonsoftjson.4.8.0.nupkg.sha512",
         "graphql.newtonsoftjson.nuspec",
         "lib/netstandard2.0/GraphQL.NewtonsoftJson.dll",
         "lib/netstandard2.0/GraphQL.NewtonsoftJson.xml",
@@ -2265,20 +2261,22 @@
         "logo.64x64.png"
       ]
     },
-    "GraphQL.Server.Ui.Playground/7.3.0": {
-      "sha512": "UioVC9AlqI5d2uncALHKx5tn5ahNWg39kCfWOQZJCag8tbM3/b5ieeGG0mgLFjjFuk7oAZyUywzCS16AJolG1Q==",
+    "GraphQL.Server.Ui.Playground/5.2.2": {
+      "sha512": "P8QbzFAa9rUxjD9XIuKOJi3kwvDL3XlieI4nqhfthTawHYzoify5DlIq9muPHee2ahjlafS9JBNoZj7DT7FTUQ==",
       "type": "package",
-      "path": "graphql.server.ui.playground/7.3.0",
+      "path": "graphql.server.ui.playground/5.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "graphql.server.ui.playground.7.3.0.nupkg.sha512",
+        "graphql.server.ui.playground.5.2.2.nupkg.sha512",
         "graphql.server.ui.playground.nuspec",
+        "lib/net5.0/GraphQL.Server.Ui.Playground.dll",
+        "lib/net5.0/GraphQL.Server.Ui.Playground.xml",
+        "lib/net6.0/GraphQL.Server.Ui.Playground.dll",
+        "lib/net6.0/GraphQL.Server.Ui.Playground.xml",
         "lib/netcoreapp3.1/GraphQL.Server.Ui.Playground.dll",
         "lib/netcoreapp3.1/GraphQL.Server.Ui.Playground.xml",
-        "lib/netstandard2.0/GraphQL.Server.Ui.Playground.dll",
-        "lib/netstandard2.0/GraphQL.Server.Ui.Playground.xml",
         "logo.64x64.png"
       ]
     },
@@ -5491,10 +5489,11 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "FluentValidation.AspNetCore >= 11.3.0",
-      "GraphQL >= 5.4.0",
+      "GraphQL >= 4.8.0",
+      "GraphQL.NewtonsoftJson >= 4.8.0",
       "GraphQL.Server.Transports.AspNetCore >= 5.2.2",
       "GraphQL.Server.Transports.AspNetCore.SystemTextJson >= 5.2.2",
-      "GraphQL.Server.Ui.Playground >= 7.3.0",
+      "GraphQL.Server.Ui.Playground >= 5.2.2",
       "HotChocolate.AspNetCore >= 14.0.0-preview.10.2",
       "HotChocolate.Data >= 14.0.0-preview.10.2",
       "Microsoft.AspNetCore.Authentication >= 2.2.0",
@@ -5506,19 +5505,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Projects.Api\\Projects.Api.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\netCoreTest\\Projects.Api\\Projects.Api.csproj",
       "projectName": "Projects.Api",
-      "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Projects.Api\\Projects.Api.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Projects.Api\\obj\\",
+      "projectPath": "C:\\Users\\USER\\source\\repos\\netCoreTest\\Projects.Api\\Projects.Api.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\source\\repos\\netCoreTest\\Projects.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5526,17 +5533,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj": {
-              "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Application\\Products.Application.csproj"
+            "C:\\Users\\USER\\source\\repos\\netCoreTest\\Products.Application\\Products.Application.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\netCoreTest\\Products.Application\\Products.Application.csproj"
             },
-            "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Persistence\\Products.Persistence.csproj": {
-              "projectPath": "E:\\Desktop\\notcore\\test_soft\\Products.Domin\\Products.Persistence\\Products.Persistence.csproj"
+            "C:\\Users\\USER\\source\\repos\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\netCoreTest\\Products.Persistence\\Products.Persistence.csproj"
             }
           }
         }
@@ -5557,7 +5565,11 @@
           },
           "GraphQL": {
             "target": "Package",
-            "version": "[5.4.0, )"
+            "version": "[4.8.0, )"
+          },
+          "GraphQL.NewtonsoftJson": {
+            "target": "Package",
+            "version": "[4.8.0, )"
           },
           "GraphQL.Server.Transports.AspNetCore": {
             "target": "Package",
@@ -5569,7 +5581,7 @@
           },
           "GraphQL.Server.Ui.Playground": {
             "target": "Package",
-            "version": "[7.3.0, )"
+            "version": "[5.2.2, )"
           },
           "HotChocolate.AspNetCore": {
             "target": "Package",
@@ -5616,7 +5628,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

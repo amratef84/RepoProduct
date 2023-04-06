@@ -3,7 +3,9 @@ using Products.Application;
 using Products.Api.GraphQL.Schemas;
 using GraphQL;
 using GraphQL.Server;
-using GraphQL.Server.Ui.Playground;
+using GraphQL.SystemTextJson;
+using GraphQL.NewtonsoftJson;
+
 using MediatR;
 using System.Reflection;
 using System;
@@ -15,7 +17,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Products.Application.Features.Users.Commands.CreateUser;
-
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,13 +33,41 @@ builder.Services.AddTransient(provider => provider.GetService<ProductDbContext>(
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
 //GraphQL
-builder.Services.AddScoped<AppSchema>();
+//builder.Services.AddScoped<AppSchema>();
+builder.Services.AddHttpContextAccessor();
+//GraphQL
+builder.Services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
+builder.Services.AddSingleton<IDocumentWriter, GraphQL.NewtonsoftJson.DocumentWriter>();
 
-builder.Services.AddGraphQL()
-    .AddSystemTextJson()
-  .AddGraphTypes(typeof(AppSchema), ServiceLifetime.Scoped);
+//builder.Services.AddSingleton<AppQuery>();
+//builder.Services.AddSingleton<AppSchema>();
 
+builder.Services.AddGraphQL((options, provider) =>
+{
+    options.EnableMetrics = true;
+    var logger = provider.GetRequiredService<ILogger>();
+    options.UnhandledExceptionDelegate = ctx => logger.LogError("GraphQL: {Error} occurred", ctx.OriginalException.Message);
+})
+// Add required services for GraphQL request/response de/serialization
+.AddSystemTextJson(configureDeserializerSettings => { }, configureSerializerSettings => { })
+.AddErrorInfoProvider(opt => opt.ExposeExceptionStackTrace = true)
+//.AddWebSockets() // Add required services for web socket support
+.AddDataLoader() // Add required services for DataLoader support
+.AddGraphTypes(typeof(AppSchema), ServiceLifetime.Scoped);
 
+//builder.Services.AddGraphQL(options => { options.EnableMetrics = true; });
+//builder.Services.AddGraphQL()
+//    .AddSystemTextJson()
+//  .AddGraphTypes(typeof(AppSchema), ServiceLifetime.Scoped);
+
+//builder.Services.AddGraphQL(options =>
+//{
+//    options.EnableMetrics = true;
+//    //options.UnhandledExceptionDelegate. = true;
+//})
+// //.AddSystemTextJson(s=>s.)
+// //.AddUserContextBuilder(context => new ProductDbContext { User = context.User })
+// .AddGraphTypes(typeof(AppSchema), ServiceLifetime.Scoped);
 
 
 builder.Services
